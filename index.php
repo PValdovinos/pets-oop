@@ -2,11 +2,16 @@
 
 // Include the class
 require ('pet.php');
+require ('dog.php');
 
 // Instantiate a pet object
 $pet1 = new Pet('Clifford', 'Red');
 $pet2 = new Pet('Bob');
 $pet3 = new Pet();
+
+$dog = new Dog ('Douglas');
+$dog->eat();
+$dog->fetch();
 
 $pet3->setName('Filbert');
 echo "Pet's name is " . $pet3->getName();
